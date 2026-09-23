@@ -1,0 +1,5 @@
+/* App.css - глобальные стили приложения */
+.app {
+    min-height: 100vh;
+    background-color: var(--bg);
+}

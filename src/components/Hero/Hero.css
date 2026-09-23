@@ -1,0 +1,86 @@
+.hero {
+    text-align: center;
+    padding: 80px 24px 100px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero__photo-wrap {
+    width: 180px; /* Увеличено с 120px */
+    height: 180px; /* Увеличено с 120px */
+    margin: 0 auto 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--surface);
+    box-shadow: var(--shadow-lg);
+}
+
+.hero__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero__title {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.hero__pitch {
+    font-size: 18px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.hero__actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    background: var(--dark);
+    color: #fff;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px 80px;
+    }
+
+    .hero__photo-wrap {
+        width: 140px; /* На мобильных чуть меньше, но всё равно больше чем было */
+        height: 140px;
+    }
+
+    .hero__title {
+        font-size: 36px;
+    }
+
+    .hero__pitch {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        font-size: 15px;
+    }
+}
