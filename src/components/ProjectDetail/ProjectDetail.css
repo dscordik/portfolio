@@ -28,10 +28,24 @@
     gap: 20px;
 }
 
+.project-detail__badge {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.project-detail__badge:hover {
+    border-color: var(--ink);
+    color: var(--ink);
+}
+
 .project-detail__image {
     width: 100%;
-    max-height: 460px;
-    object-fit: cover;
+    height: auto;
     border-radius: var(--radius);
     border: 1px solid var(--border);
 }
