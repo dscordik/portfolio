@@ -1,7 +1,7 @@
 .project-detail {
     max-width: var(--container);
     margin: 0 auto;
-    padding: 48px 24px 88px;
+    padding: 48px 24px 48px; /* уменьшил нижний отступ */
 }
 
 .project-detail__back {
@@ -22,27 +22,7 @@
     color: var(--ink-muted);
 }
 
-/* ===== Заголовок над колонками ===== */
-
-.project-detail__header {
-    margin-bottom: 40px;
-}
-
-.project-detail__title {
-    font-size: 40px;
-    font-weight: 800;
-    margin: 0 0 12px;
-}
-
-.project-detail__intro {
-    color: var(--ink-muted);
-    font-size: 17px;
-    max-width: 70ch;
-    margin: 0;
-}
-
-/* ===== Двухколоночная раскладка ===== */
-
+/* Двухколоночная раскладка */
 .project-detail__layout {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -56,6 +36,12 @@
     gap: 28px;
 }
 
+.project-detail__title {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+
 .project-detail__section-title {
     font-size: 18px;
     font-weight: 700;
@@ -66,6 +52,7 @@
     color: var(--ink-muted);
     font-size: 15px;
     margin: 0;
+    max-width: 65ch;
 }
 
 .project-detail__stack {
@@ -87,16 +74,6 @@
 .project-detail__badge:hover {
     border-color: var(--ink);
     color: var(--ink);
-}
-
-.project-detail__features {
-    margin: 0;
-    padding-left: 20px;
-    color: var(--ink-muted);
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
 .project-detail__actions {
@@ -133,14 +110,10 @@
     background: var(--bg);
 }
 
-/* ===== Правая колонка — визуал ===== */
-
+/* Правая колонка */
 .project-detail__visual {
     position: sticky;
     top: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
 }
 
 .project-detail__image {
@@ -151,8 +124,7 @@
     display: block;
 }
 
-/* ===== Адаптив ===== */
-
+/* Адаптив */
 @media (max-width: 860px) {
     .project-detail__layout {
         grid-template-columns: 1fr;
@@ -160,7 +132,7 @@
 
     .project-detail__visual {
         position: static;
-        order: -1;
+        order: -1; /* картинка сверху на мобиле */
     }
 
     .project-detail__title {
