@@ -29,7 +29,7 @@ export const projects: Project[] = [
         problem: "Бизнесу с аудиторией в Telegram (а не в отдельном приложении) нужен способ продавать прямо внутри мессенджера — без установки отдельного приложения и с готовой авторизацией по аккаунту пользователя, что резко снижает порог входа для клиента.",
         imageUrl: "/projects/tg-mini-app.png",
         stack: ["React", "TypeScript", "Vite", "FastAPI", "SQLAlchemy", "Pydantic", "JWT", "Telegram WebApp SDK"],
-        linkDemo: "https://t.me/ВПИШИ_USERNAME_СВОЕГО_БОТА",
+        linkDemo: "https://t.me/myshop_tma_bot",
         linkGit: "https://github.com/dscordik/tg-mini-app"
     },
     {

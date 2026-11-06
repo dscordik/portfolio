@@ -10,7 +10,7 @@ export const About: React.FC = () => {
                         Я <span className="about__name">Миша</span>
                     </h2>
                     <p className="about__text">
-                        Привет! Мне 17 лет, я учусь в 11 классе.
+                        Привет! Мне 18 лет.
                         Моё увлечение веб-разработкой началось полтора года назад с простого
                         любопытства: «А как вообще работают сайты?».
                     </p>
@@ -24,7 +24,7 @@ export const About: React.FC = () => {
 
                 <div className="about__stats">
                     <div className="about__stat">
-                        <div className="about__stat-number">1.5</div>
+                        <div className="about__stat-number">2</div>
                         <div className="about__stat-label">года в разработке</div>
                         <div className="about__stat-desc">
                             Самостоятельное изучение и практика. От первых HTML-страниц до fullstack-приложений.
@@ -43,7 +43,7 @@ export const About: React.FC = () => {
                         <div className="about__stat-number">17</div>
                         <div className="about__stat-label">лет</div>
                         <div className="about__stat-desc">
-                            Учусь в 11 классе. Развиваюсь в веб-разработке параллельно со школой.
+                            Развиваюсь в веб-разработке
                         </div>
                     </div>
 
