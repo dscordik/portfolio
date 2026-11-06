@@ -40,7 +40,7 @@ export const About: React.FC = () => {
                     </div>
 
                     <div className="about__stat">
-                        <div className="about__stat-number">17</div>
+                        <div className="about__stat-number">18</div>
                         <div className="about__stat-label">лет</div>
                         <div className="about__stat-desc">
                             Развиваюсь в веб-разработке
